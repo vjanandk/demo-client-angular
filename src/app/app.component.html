@@ -1,0 +1,25 @@
+<!-- Top Menu -->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 navbar">
+      <a></a>
+      <a>Welcome to Vj's Company</a>
+      <a>{{dateTime | date:'medium'}}</a>
+      <a>Logged in as Vj</a>
+      <a>Logout</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2 sidenav">
+      <a routerLink="/home" class="active">Home</a>
+      <a routerLink="/products">Products</a>
+      <a routerLink="/stocks">Stocks</a>
+      <a routerLink="/contactus">Contact Us</a>
+    </div>
+    <div class="col-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
